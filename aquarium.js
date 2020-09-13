@@ -22,10 +22,10 @@ function calccost() {
         return;
     }
 if (length < 25) {
-	costObj.innerHTML = (0.06* (2*(height*length) + 2*(height*width) + (width*length)) + (0.10 * 4 * height + 0.10 * 2* length + 0.10 * 2* width) + (2*(height * length) + 
-	2*(height * width) + (width * length) / 6000 * 60)) *1.1   
+	costObj.innerHTML = '$' + (0.06* (2*(height*length) + 2*(height*width) + (width*length)) + (0.10 * (4 * height) + 0.10 * (2* length) + 0.10 * (2* width)) + ((2*(height * length) + 
+	2*(height * width) + (width * length)) / 6000) * 60) *1.1   
 } else {
-	costObj.innerHTML = (0.1* (2*(height*length) + 2*(height*width) + (width*length)) + (0.10 * 4 * height + 0.10 * 2* length + 0.10 * 2* width) + (2*(height * length) + 
-	2*(height * width) + (width * length) / 6000 * 60)) *1.1   
+	costObj.innerHTML = '$' + (0.1* (2*(height*length) + 2*(height*width) + (width*length)) + (0.10 * (4 * height) + 0.10 * (2* length) + 0.10 * (2* width)) + ((2*(height * length) + 
+	2*(height * width) + (width * length)) / 6000) * 60) *1.1     
 }
 }
